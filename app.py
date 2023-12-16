@@ -102,7 +102,7 @@ if len(parsed_results) > 0:
     cell_renderer = JsCode(
         '''
             function(params) {
-                return `<a href=' + params.value + ' target="_blank">' + params.value + '</a>`;
+                return '<a href=' + params.value + ' target="_blank">'+ params.value +'</a>'
             }
         '''
     )
